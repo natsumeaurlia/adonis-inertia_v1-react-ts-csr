@@ -45,7 +45,9 @@ Encore.setPublicPath('/ssr')
 | entrypoints.
 |
 */
-Encore.addEntry('ssr', './resources/js/ssr.js')
+Encore.addEntry('app', './resources/js/ssr.tsx')
+Encore.enableTypeScriptLoader()
+Encore.enableReactPreset()
 
 /*
 |--------------------------------------------------------------------------
@@ -147,6 +149,8 @@ Encore.configureDevServerOptions((options) => {
 //   runtimeCompilerBuild: false,
 //   useJsx: false,
 // })
+Encore.enableTypeScriptLoader()
+Encore.enableReactPreset()
 
 /*
 |--------------------------------------------------------------------------

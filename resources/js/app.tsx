@@ -1,15 +1,8 @@
-import { InertiaApp } from '@inertiajs/inertia-react'
-import React from 'react'
-import ReactDOM from 'react-dom'
-import '../css/app.css'
+import { createRoot } from 'react-dom/client'
+import { createInertiaApp } from '@inertiajs/react'
 
-const el = document.getElementById('app')
-
-ReactDOM.render(
-    <InertiaApp
-      initialPage={JSON.parse(el?.dataset.page ?? '')}
-      initialComponent={null}
-      resolveComponent={(name) => import(`./pages/${name}`).then((module) => module.default)}
-    />,
-  el
-)
+createInertiaApp({
+  id: 'app',
+  resolve: (name) => require(`./pages/${name}`),
+  setup: ({ el, App, props }) => createRoot(el).render(<App {...props} />),
+})

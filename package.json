@@ -44,7 +44,7 @@
     "@babel/preset-react": "^7.0.0",
     "@japa/preset-adonis": "^1.2.0",
     "@japa/runner": "^2.5.1",
-    "@symfony/webpack-encore": "4.1.1",
+    "@symfony/webpack-encore": "4.3.0",
     "@types/proxy-addr": "^2.0.0",
     "@types/source-map-support": "^0.5.6",
     "adonis-preset-ts": "^2.1.0",
@@ -55,9 +55,9 @@
     "pino-pretty": "^10.0.0",
     "prettier": "^2.8.8",
     "ts-loader": "^9.0.0",
-    "typescript": "~4.6",
+    "typescript": "~5.0.4",
     "webpack": "^5.72",
-    "webpack-cli": "^4.9.1",
+    "webpack-cli": "^5.1.1",
     "youch": "^3.2.3",
     "youch-terminal": "^2.2.0"
   },
@@ -68,8 +68,6 @@
     "@adonisjs/shield": "^7.0.0",
     "@adonisjs/view": "^6.2.0",
     "@eidellev/inertia-adonisjs": "^8.0.1",
-    "@inertiajs/inertia": "^0.11.1",
-    "@inertiajs/inertia-react": "^0.8.1",
     "@inertiajs/react": "^1.0.7",
     "@types/react": "^18.2.7",
     "@types/react-dom": "^18.2.4",
@@ -77,7 +75,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "reflect-metadata": "^0.1.13",
-    "source-map-support": "^0.5.21",
-    "webpack-node-externals": "^3.0.0"
+    "source-map-support": "^0.5.21"
   }
 }

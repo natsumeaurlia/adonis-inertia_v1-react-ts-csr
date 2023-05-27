@@ -6,3 +6,5 @@ coverage
 .env
 tmp
 inertia
+public/assets/entrypoints.json
+public/assets/manifest.json
